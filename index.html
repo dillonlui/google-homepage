@@ -6,34 +6,100 @@
         <title>Google Homepage</title>
 
         <style type="text/css">
-            .profile-picture {
-                
+            .nav-bar {
+               margin: 0;
+               padding: 0; 
             }
+            li {
+                display: inline;
+            }
+            li a{
+                color: #000000;
+                text-align: center;
+                vertical-align: middle;
+                padding-left: 15px; 
+            }
+            .footer {
+                display: flex;
+                align-items: stretch;
+            }
+            .footer > div {
+                text-align: center;
+            }
+            .nav-bar a:link, .footer a:link {
+                text-decoration: none;
+            }
+            .nav-bar a:hover, .footer a:hover {
+                text-decoration: underline;
+            }
+                
+            .profile-picture {
+                height: 32px;
+                width: 32px;
+                border-color:gray;
+                border-width: 2px;
+                border-style: solid;
+                border-radius: 50%;
+            }
+
+            .logo {
+                padding-top: 109px;
+            }
+            .center {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .buttons {
+                display: flex;
+                justify-content: center;
+            }
+
         </style>
     </head>
     <body>
-        <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Store</a></li>
-            <li><a href="#">Gmail</a></li>
-            <li><a href="#">Images</a></li>
-            <li><a class="profile-picture" href="https://github.com/dillonlui"><img src="/Images/profile-picture.jpeg"></a></li>
-        </ul>
-        
-        <a href="index.html"> <img class="logo"
+        <nav>
+            <ul class="nav-bar">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Store</a></li>
+                <li><a href="#">Gmail</a></li>
+                <li><a href="#">Images</a></li>
+                <li><a href="#">Apps</a></li>
+                <li><a href="https://github.com/dillonlui"><img class="profile-picture" src="/Images/profile-picture.jpeg"></a></li>
+            </ul>
+        </nav>
+
+        <a href="index.html"> <img class="logo center"
             src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
             alt="Google logo">
         </a>
         <br>
-        <form>
-            <input type="text">
+        
+            <input type="text" class="center search-box">
              <br>
+        <div class="buttons">
             <button type="submit">Google Search</button>
             <button type="submit">I'm Feeling Lucky</button>
-         <p>This is the Google homepage by Dillon Lui.</p>
-
-        </form>
+        </div>   
        
+        <footer class="footer">
+            <ul>
+                <div>
+                    <li><a href="#">Advertising</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">How Search Works</a></li>
+                </div>
+                <div style="flex-basis: 60%;">
+                    <li><a href="#">Carbon neutral since 2007</a></li>
+                </div>
+                <div style="justify-content:flex-end;">
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Settings</a></li>
+                </div>
+                
+            </ul>
+        </footer>
     </body>
    
 </html>
