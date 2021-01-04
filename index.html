@@ -7,156 +7,58 @@
        
         <title>Google Homepage</title>
 
-        <style type="text/css">
-            html, body {
-                font-family: sans-serif;
-                margin: 0;
-                padding: 0;
-                width: 100%;
-                height: 100%;
-            }
-          
-
-            body {
-                display: flex;
-                flex-direction: column;
-               
-            }
-            
-            .nav-bar {
-               display: flex;
-               justify-content: space-between;
-               align-items: center;
-            }
-            .nav-bar a, .footer a{
-                color: #000000;
-                padding: 15px 15px; 
-                
-            }
-            .footer {
-                margin-top: auto;
-                background-color: #f2f2f2;
-                display: flex;
-                justify-content: space-between;
-                padding: 10px 30px;
-                white-space: nowrap;
-            }
-
-            @media screen and (max-width: 923px) {
-                    .footer {   
-                     flex-direction: column;
-                        }
-                    }
-            .footer > div{
-                text-align: center;
-            }
-            .nav-bar a:link, .footer a:link {
-                text-decoration: none;
-            }
-            .nav-bar a:hover, .footer a:hover {
-                text-decoration: underline;
-            }
-
-
-            .profile-picture {
-                height: 32px;
-                width: 32px;
-                border-color:#f2f2f2;
-                border-style: solid;
-                border-radius: 50%;
-            }
-            .content {
-                flex: 1 0 auto;
-                padding-bottom: 35px;
-            }
-            .logo {
-                padding-top: 109px;
-            }
-            .center {
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-            }
-            .search {
-                padding-top: 6px;
-                width: 400px;
-                max-width: 484px;
-                
-            }
-            .buttons {
-                display: flex;
-                justify-content: center;
-            }
-            .buttonstext {
-                font-size: 14px;
-                margin: 11px 4px;
-                padding: 0 16px;
-                line-height: 27px;
-                height: 36px;
-                min-width: 54px;
-                text-align: center;
-                cursor: pointer;
-                background-color: #f8f9fa;
-                border: 1px solid #f8f9fa;
-                flex-shrink: 0;
-            }
-            .buttonstext:hover {
-                border: 1px solid #3c4043;
-            }
-            .leaf {
-                height: 14px;
-            }
-
-        </style>
+        <link rel="stylesheet" href="main.css">
     </head>
     <body>
-        <nav class="nav-bar">
-            <div>
-                <a href="#">About</a>
-                <a href="#">Store</a>
-                <a href="#">Gmail</a>
-            </div>
-            <div>
-                <a href="#">Images</a>
-                <a href="#">Apps</a>
-                <a href="https://github.com/dillonlui"><img class="profile-picture" src="/Images/profile-picture.jpeg"></a>
-            </div>
-           
-        </nav>
+        <div class="page">
+                <nav class="nav-bar">
+                    <div>
+                        <a href="#">About</a>
+                        <a href="#">Store</a>
+                        <a href="#">Gmail</a>
+                    </div>
+                    <div>
+                        <div>
+                            <a href="#">Images</a>
+                            <a href="#"><img src="/Images/apps.png"></a>
+                            <a href="https://github.com/dillonlui" sytle="padding-right: 0;"><img class="profile-picture" src="/Images/profile-picture.jpeg" ></a>
+                        </div>
+                    </div>
+                </nav>
 
-        <div class="content">
-            <div>
-                <img class="logo center"
-                src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
-                alt="Google logo">
-            </div>
-            <br>
-            <div>
-                <input type="text" class="center search" style="width:">
-            </div>
-            <br>
-            <div class="buttons">
-                <button type="submit" class="buttonstext">Google Search</button>
-                <button type="submit" class="buttonstext">I'm Feeling Lucky</button>
-            </div>   
+                <main class="content">
+                    <div>
+                        <img class="logo center"
+                        src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+                        alt="Google logo">
+                    </div>
+                    <br>
+                    <div>
+                        <input type="text" class="center search" style="width:">
+                    </div>
+                    <br>
+                    <div class="buttons">
+                        <button type="submit" class="buttonstext">Google Search</button>
+                        <button type="submit" class="buttonstext">I'm Feeling Lucky</button>
+                    </div>   
+                </main>
+            
+                <footer class="footer">
+                        <div>
+                            <a href="#" style="padding-left: 0">Advertising</a>
+                            <a href="#">Business</a>
+                            <a href="#">How Search Works</a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="Images/leaf.png" class="leaf"> Carbon neutral since 2007</a>
+                        </div>
+                        <div>
+                            <a href="#">Privacy</a>
+                            <a href="#">Terms</a>
+                            <a href="#" style="padding-right: 0;">Settings</a>
+                        </div>
+                </footer>
         </div>
-       
-       
-        <footer class="footer">
-                <div>
-                    <a href="#">Advertising</a>
-                    <a href="#">Business</a>
-                    <a href="#">How Search Works</a>
-                </div>
-                <div>
-                    <a href="#"><img src="Images/leaf.png" class="leaf"> Carbon neutral since 2007</a>
-                </div>
-                <div>
-                    <a href="#">Privacy</a>
-                    <a href="#">Terms</a>
-                    <a href="#">Settings</a>
-                </div>
-        </footer>
     </body>
    
 </html>
